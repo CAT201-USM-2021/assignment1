@@ -1,3 +1,9 @@
+<?php 
+    session_start();
+    $message = $_SESSION["message"];
+
+?> 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,10 +26,11 @@
     <div class="main">
         <div class="container">
             <h3>Please upload your pdf file</h3>
-            <form action="">
-                <input type="file" id="myFile" class="file-upload" name="filename">
+            <form action="upload.php" method="post", enctype="multipart/form-data">
+                <input type="file" id="myFile" class="file-upload" name="uploaded_file", value="uploaded_file">
+                <div> <?php echo $message; ?> </div>
                 <br>
-                <button type="button" class="submit">Submit</button>
+                <button type="submit" class="submit">Submit</button>
             </form>
         </div>
         <p>continue to put whatever you want</p>
