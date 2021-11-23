@@ -5,65 +5,37 @@ body {
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Verdana', sans-serif;
     font-weight: 100;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 930px;
+    max-width: 9300px;
     padding: 0 10px;
 }
 
 .header {
-    background: url("images/office background.jpg") no-repeat center center;
-    background-size: cover;
-    height: 900px;
-    text-align: center;
-
+    background-image: linear-gradient(white, rgb(180, 180, 180));
+    height: 90px;
 }
 
 .header .container {
     position: relative;
-    top: 200px;
+    top: 40px;
 }
 
 .header h1 {
-    color: #fff;
-    line-height: 100px;
-    font-size: 80px;
+    color: rgb(59, 140, 160);
+    line-height: 10px;
+    font-size: 24px;
     margin-top: 0;
-    margin-bottom: 80px;
-    text-transform: uppercase;
-}
-
-.header .container {
-    position: relative;
-    top: 200px;
-}
-
-.header h1 {
-    color: rgb(255, 255, 255);
-    line-height: 100px;
-    font-size: 80px;
-    margin-top: 0;
-    margin-bottom: 80px;
-    text-transform: uppercase;
-}
-
-
-
-.header h2 {
-    color: rgb(255, 255, 249);
-    font-weight: 500;
-    letter-spacing: 8px;
-    margin-bottom: 30px;
-    margin-top: 0;
-    text-transform: uppercase;
 }
 
 .main {
-    background-color: bisque;
+    background: url("images/wallpaper.jpg") no-repeat center center;
+    background-size: cover;
+    height: 540px;
     text-align: center;
 }
 
@@ -71,63 +43,88 @@ body {
     position: relative;
 }
 
-.main h3 {
-
-    color: rgb(0, 0, 0);
-    font-weight: 500;
-    letter-spacing: 8px;
-    margin-bottom: 40px;
+.main h2 {
+    color: rgb(65, 64, 64);
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding-top: 50px;
+    margin-bottom: 50px;
     margin-top: 0;
-    text-transform: uppercase;
+}
+
+.main h3 {
+    color: rgb(65, 64, 64);
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
 .main p {
     margin: 0;
-
+    color: rgb(37, 37, 37);
 }
 
 #myFile {
     margin-bottom: 30px;
-    width: 300px;
+    width: 400px;
+    font-size: 15px;
+    font-family: 'Verdana', sans-serif;
+    color: rgb(65, 64, 64);
     border: none;
     outline: none;
-    box-shadow: 2px 5px 2px black;
+    box-shadow: 2px 5px 2px rgb(102, 102, 102);
     border-radius: 50px;
 }
 
 ::-webkit-file-upload-button {
     border: none;
-    background: brown;
+    background: rgb(92, 206, 214);
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
     border-radius: 50px;
-    height: 40px;
+    height: 60px;
     color: white;
-    width: 100px;
+    width: 150px;
     cursor: pointer;
+}
+
+::-webkit-file-upload-button:hover {
+    background-color: rgb(75, 161, 180);
 }
 
 .submit {
     border: none;
-    background: brown;
+    background: rgb(92, 206, 214);
     border-radius: 50px;
-    height: 40px;
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    height: 80px;
     color: white;
-    width: 100px;
+    width: 180px;
     cursor: pointer;
-    box-shadow: 2px 5px 2px black;
+    box-shadow: 2px 5px 2px rgb(102, 102, 102);
     margin-bottom: 40px;
+}
 
+.submit:hover {
+    background-color: rgb(75, 161, 180);
 }
 
 .footer {
-    background-color: black;
+    background-image: linear-gradient(rgb(158, 156, 156), white);
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .footer li {
-    color: white;
+    color: rgb(65, 64, 64);
 }
 
 .footer p {
     margin-top: 0;
-    color: white;
+    color: rgb(65, 64, 64);
 }
