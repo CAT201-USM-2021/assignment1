@@ -1,7 +1,11 @@
 <?php 
     session_start();
-    $message = $_SESSION["message"];
 
+    // This is used to make sure when starting fresh, we don't have session variable & clear the session variable after refreshing
+    session_destroy();
+    $message = isset($_SESSION["message"])? $_SESSION["message"]: "";
+    $error = isset($_SESSION["error"])? $_SESSION["error"]: "";
+    $file_dir = isset($_SESSION["file_dir"])? $_SESSION["file_dir"]: ""; //this variable need to change to txt file location later
 ?> 
 
 <!DOCTYPE html>
@@ -29,11 +33,15 @@
             <form action="upload.php" method="post", enctype="multipart/form-data">
                 <input type="file" id="myFile" class="file-upload" name="uploaded_file", value="uploaded_file">
                 <div> <?php echo $message; ?> </div>
+                <!--- Can create a red text box for the error --->
+                <div> <?php if($error) echo "Error: $error"; ?> </div>
                 <br>
                 <button type="submit" class="submit">Submit</button>
             </form>
         </div>
         <p>Continue to put whatever you want</p>
+        <!--- Can create a download box for the converted file --->
+        <p> <a href=<?php echo "download.php?file=$file_dir"; ?>> <?php if($file_dir) echo "click here to download uploaded file"; ?></a> </p>
     </div>
 </body>
 
