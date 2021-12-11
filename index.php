@@ -4,8 +4,11 @@
     // This is used to make sure when starting fresh, we don't have session variable & clear the session variable after refreshing
     session_destroy();
     $message = isset($_SESSION["message"])? $_SESSION["message"]: "";
+    $convert_message = isset($_SESSION["convert_message"])? $_SESSION["convert_message"]: "";
     $error = isset($_SESSION["error"])? $_SESSION["error"]: "";
-    $file_dir = isset($_SESSION["file_dir"])? $_SESSION["file_dir"]: ""; //this variable need to change to txt file location later
+    $file_dir = isset($_SESSION["file_dir"])? $_SESSION["file_dir"]: "";
+
+    // will add another button, to delete the file first, then refresh the page, then upload another file, to make sure file naming is standardised, and the file transfer easier
 ?> 
 
 <!DOCTYPE html>

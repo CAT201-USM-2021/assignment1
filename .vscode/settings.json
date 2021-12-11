@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\fontbox-2.0.24.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\pdfbox-2.0.24.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\pdfbox-app-2.0.24.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\pdfbox-tools-2.0.24.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\preflight-2.0.24.jar",
+        "c:\\Users\\liewm\\Downloads\\pdfBox jar files\\xmpbox-2.0.24.jar"
+    ]
+}
