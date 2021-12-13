@@ -1,14 +1,14 @@
-<?php 
-    session_start();
+<?php
+session_start();
 
-    // This is used to make sure when starting fresh, we don't have session variable & clear the session variable after refreshing
-    session_destroy();
-    $message = isset($_SESSION["message"])? $_SESSION["message"]: "";
-    $convert_message = isset($_SESSION["convert_message"])? $_SESSION["convert_message"]: "";
-    $error = isset($_SESSION["error"])? $_SESSION["error"]: "";
-    $file_dir = isset($_SESSION["file_dir"])? $_SESSION["file_dir"]: "";
+// This is used to make sure when starting fresh, we don't have session variable & clear the session variable after refreshing
+session_destroy();
+$message = isset($_SESSION["message"]) ? $_SESSION["message"] : "";
+$convert_message = isset($_SESSION["convert_message"]) ? $_SESSION["convert_message"] : "";
+$error = isset($_SESSION["error"]) ? $_SESSION["error"] : "";
+$file_dir = isset($_SESSION["file_dir"]) ? $_SESSION["file_dir"] : "";
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,22 +32,24 @@
         <div class="container">
             <h2>Convert PDF files to Text files</h2>
             <h3>Please upload your PDF file</h3>
-            <form action="upload.php" method="post", enctype="multipart/form-data">
-                <input type="file" id="myFile" class="file-upload" name="uploaded_file", value="uploaded_file">
+            <form action="upload.php" method="post" , enctype="multipart/form-data">
+                <input type="file" id="myFile" class="file-upload" name="uploaded_file" , value="uploaded_file">
                 <div> <?php echo $message; ?> </div>
                 <!--- Can create a red text box for the error --->
-                <div> <?php if($error) echo "Error: $error"; ?> </div>
+                <div> <?php if ($error) echo "Error: $error"; ?> </div>
                 <br>
                 <button type="submit" class="submit">Submit</button>
             </form>
         </div>
-        <!--- Can create a download box for the converted file --->
-        <p> <?php echo $convert_message; ?> </p>
-        <p> <a href=<?php echo "download.php?file=$file_dir"; ?>> <?php if($file_dir) echo "click here to download uploaded file"; ?></a> </p>
         <!--- Can improve the look of this button --->
         <form action="clearfile.php" method="post">
-                <button type="submit" class="submit">Clear File</button>
+            <button type="submit" class="submit">Clear File</button>
         </form>
+        <!--- Can create a download box for the converted file --->
+        <p> <?php echo $convert_message; ?> </p>
+        <p> <a href=<?php echo "download.php?file=$file_dir"; ?>>
+                <?php if ($file_dir) echo "click here to download uploaded file"; ?></a> </p>
+
     </div>
 </body>
 
