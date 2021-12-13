@@ -44,11 +44,9 @@ if ($upload_status == 0) {
 	}
 }
 
-// Big Bug: unable to compile java
 // Start converting .pdf to .txt
-exec('javac -cp ".:pdfbox-java-lib/pdfbox-app-2.0.24.jar" pdfBox/src/main/pdfbox_code.java', $output);
-exec('java -cp ".:pdfbox-java-lib/pdfbox-app-2.0.24.jar" pdfBox/src/main/pdfbox_code.java', $output);
-// print_r($output);
+exec('javac -cp "pdfBox/java-lib/pdfbox-app-2.0.24.jar" pdfBox/src/main/pdfbox_code.java', $output);
+exec('java -cp "pdfBox/java-lib/pdfbox-app-2.0.24.jar" pdfBox/src/main/pdfbox_code.java', $output);
 
 // Saving the converted text file
 if(file_exists("pdfBox/src/uploads/converted.txt")){

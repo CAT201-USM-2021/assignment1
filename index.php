@@ -8,7 +8,6 @@
     $error = isset($_SESSION["error"])? $_SESSION["error"]: "";
     $file_dir = isset($_SESSION["file_dir"])? $_SESSION["file_dir"]: "";
 
-    // will add another button, to delete the file first, then refresh the page, then upload another file, to make sure file naming is standardised, and the file transfer easier
 ?> 
 
 <!DOCTYPE html>
@@ -42,9 +41,13 @@
                 <button type="submit" class="submit">Submit</button>
             </form>
         </div>
-        <p>Continue to put whatever you want</p>
         <!--- Can create a download box for the converted file --->
+        <p> <?php echo $convert_message; ?> </p>
         <p> <a href=<?php echo "download.php?file=$file_dir"; ?>> <?php if($file_dir) echo "click here to download uploaded file"; ?></a> </p>
+        <!--- Can improve the look of this button --->
+        <form action="clearfile.php" method="post">
+                <button type="submit" class="submit">Clear File</button>
+        </form>
     </div>
 </body>
 

@@ -1,36 +1,127 @@
+SCHOOL OF COMPUTER SCIENCES 
+UNIVERSITI SAINS MALAYSIA 
+ACADEMIC SESSION: 2021/2022 
  
-School of Computer Sciences 
+CPT 111 – PRINCIPLES OF PROGRAMMING 
+Assignment 1 Part B: Hackathon 
+Recommendation System for Device Purchasing 
+Your friends are surveying the market for portable device to buy for themselves. However, 
+they cannot make a decision due to too much information available. Because you are more 
+technical savvy, they asked for your help to find the most suitable device for them. You 
+wanted to write a program to help your friends and possibly other people to choose the 
+best device to buy and suggest the best three options available for them. Before you can 
+write the program, they must first listed all the available devices they consider buying into a 
+file.  
+Given that the file contains the specifics of available devices for the program to select from, 
+identify the most suitable device to buy based on a series of device specification set by your 
+friends, from the most required features to the least important features. You are free to 
+determine how many features to be included to determine suitable device to match 
+(minimum 3). However, the program may allow flexibility to the user so they can have only 
+one preference (instead of 3). You also need to obtain the order of the preferences and how 
+important the features are. Based on that, the system should be able to suggest the best 
+three devices from the input file list.   
+You may define your own constraint in the code to make it feasible for the program to find 
+the most probable devices. 
+Under usual circumstances, there must be at least three devices to propose. If nothing 
+match, the program MUST propose at least one possible device.  
+Upon completion, allow user to select the most preferred device and using their define 
+ceiling value to spend, you may provide suitable menus by the system to select additional 
+accessories for the device. Use your creativity to design the accessories options. However 
+the selection must not exceed the ceiling value the user has set. 
+The input file is organised as follow: 
+i. Model 
+ii. Make 
+iii. Price 
+iv. Processor 
+v. Processor speed 
+vi. ROM size 
+vii. RAM size 
+viii. Main camera 
+ix. Front camera 
+x. Battery capacity 
+All columns are separated with tab. 
+Additional program specifications: 
+? You must only open the file, once.  
+? You must not change the content of the input file. 
+? You must only close the file once. 
+? You need to clearly state your assumption in your report. For example: It does not 
+matter what is the making of the processor chipset (Kyro or Cortex or Mongoose), 
+you determine one speed superior over the other by looking at the value of the 
+speed GHz. 
+The sample of input file’s content is in the attachment. 
+You program must have the following features: 
+i. Interactive – menu to aid user, easy to follow 
+ii. Meaningful comments in the source codes 
  
-CAT201 Integrated Software 
-Development Workshop 
+Your documentation need to have: 
+i. The details of the report in the cover: 
+Course: CPT111  
+Assignment: 1 
+Report for: Hackathon Part B  
+Group Number: <Your group number Please refer to the Google Spreadsheet 
+in eLearning> 
+Member List : <Members full name (Matric Number)> 
+Lecturer’s Name: Dr Nur Hana Samsudin 
+ii. Table of Content 
+iii. Description of the question requirements 
+a. Analysis of the problem 
+b. Identify the specification of the requirements 
+c. Design of the program in pseudocode or flowchart 
+d. Make sure you include inputs, outputs, process and your own constraints and 
+assumptions 
+iv. The code 
+v. Sample of cases tested on your program (use print screen with clear print) 
+Restriction for this Hackathon Part B: 
+• You must not add any Artificial Intelligence (AI) component. 
+• You must not use array, function, pointers or any other topics which only will be 
+covered after Week 7. 
+• You must not use global variable. 
+• You must not use vector, list, queue, or any possible data structure provided by the 
+built-in C++ library.  
+• You must not use <vector>, <stdio>, <list>, <linkedlist>, <queue>, <stack> and any 
+other preprocessor never used before during your lab session. You may use all the 
+directives in your programme’s pre-processor which you have been exposed to 
+during your class and lab sessions. 
+How to Submit: 
+i. You need to compress/zipped all documents into one file. Make sure you have: 
+a. The code in .cpp file 
+b. The input file (even if it is exactly the same with the one provided) 
+c. Your report in .pdf file 
+d. List of the team member in .txt file with the link for your video 
  
- 
-CAT201 Project 
- 
-Objectives: 
-  1. Construct a software based on JAVA programming language with user-friendly 
-graphical user interface in a team. 
-  2. Practice the latest Human-computer interaction (HCI) principles in designing, 
-assessing and implementing interactive computing systems. 
- 
-Details: 
-CAT201 group project marks: 50/100 
-Type of project: Java desktop application/program or Java Android application. 
-Mark distribution: 
-? 20 % GUI 
-? 60 % Overall System  (GUI, codes, innovativeness) 
-? 10% Version Control 
-? 10% Final Report  
-Form a group consists of 3-4 members. 
- 
-Important Dates: 
-Submission of proposal: 14 November 2021 
-Final program and report submission: 30 January 2021 
-Presentation and demo: 31 January 2021 – 6 January 2021 
- 
-Proposal: 
-Submit a one-page report with group members, title and a short description of the project. 
- 
-Final program and report: 
-Submit a full report that describes about the program, screen shots, and member’s 
-contributions; source codes and reference to libraries/API/engine.  
+ii. Short video presentation (must not exceed 15 mins) describing the flow of how 
+you implement the program (not describing your flowcharts) and showing the 
+system running using input file sample. 
+iii. Upload your zipped folder in the submission link provided in the e-Learning. 
+iv. Name the folder containing the files in the form of <Group Number> only. 
+v. There is not specific writing font to use. If you need a relative or comparable size, 
+you may use Times New Roman or Calibri with size 11 or 12 for the main 
+content. You may use other font size for sub-title / sub-heading. Just be 
+consistent about it. Please do it in MS Word or Open Office or Google Doc or any 
+comparable document type and convert to pdf. Do not write your report in MS 
+Powerpoint.  
+vi. If you are using any version MS Visual Studio for your program, remember to 
+a. Create a folder with suffix: _VS 
+For example, if you are from Group 99, from the very beginning you are to 
+create a folder Group 99_VS.  
+b. Never change the location of the files, modify any unknown file during or 
+after you complete. Any simplest modification can render the folder 
+unreadable. 
+c. Put all file input and output in within the folder you created. 
+d. Zipped everything the way you program. 
+vii. You must not use other IDE (because I don’t have them in my machines and 
+afraid I cannot run your program). 
+Hackathon Duration 
+i. This question is released at 16:00 on 10th December 2021 (Friday) and is due to 
+be submitted at 19:00 on 11th November 2021 (Saturday). 
+ii. Submission outside e-Learning platform will not be accepted. Failure to submit 
+using the platform will render you not getting any marks. 
+iii. Late submission via the system will be penalised. 
+Additional Notes 
+i. The team allowing their program or report to be copied by another team will 
+also get ‘F’ together with the group they shared their program or report with. 
+ii. Please refer to rubric to know more about penalties deduction. 
+iii. I will not answer your questions if you ghosted your Telegram ID. 
+iv. Time extended is not a mistake. You can finish within the allocated time. In 
+case you need the extra time, please use it. 
+-=NHS=- 
