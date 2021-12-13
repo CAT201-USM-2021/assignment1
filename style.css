@@ -114,6 +114,10 @@ body {
     background-color: rgb(75, 161, 180);
 }
 
+.php {
+    color: rgb(65, 64, 64);
+}
+
 .footer {
     background-image: linear-gradient(rgb(158, 156, 156), white);
     padding-top: 10px;
