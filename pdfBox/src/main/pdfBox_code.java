@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 public class pdfBox_code {
     public static void main(String[] args) throws IOException {
         
-        File file = new File("pdfBox\\src\\uploads\\toBeConverted.pdf");
+        File file = new File("pdfBox/src/uploads/toBeConverted.pdf");
         String text;
         PDFParser parser = new PDFParser(new RandomAccessFile(file, "r"));
         parser.parse();
@@ -22,7 +22,7 @@ public class pdfBox_code {
         PDDocument pdDoc = new PDDocument(cosDoc);
         text = pdfStrip.getText(pdDoc);
 
-        PrintWriter priWri = new PrintWriter("pdfBox\\src\\uploads\\converted.txt");
+        PrintWriter priWri = new PrintWriter("pdfBox/src/uploads/converted.txt");
         priWri.print(text);
         priWri.close();
     }
