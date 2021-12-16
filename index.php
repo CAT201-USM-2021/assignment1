@@ -45,7 +45,7 @@ $file_dir = isset($_SESSION["file_dir"]) ? $_SESSION["file_dir"] : "";
         <br>
         <?php if ($file_dir) echo 
             "<p> <a href='download.php?file=$file_dir'>
-                <button class ='download'> Download the Uploaded File </button> </a> </p>"; ?>
+                <button class ='download'> Download the Converted Text File </button> </a> </p>"; ?>
         <form action="clearfile.php" method="post">
             <?php if ($file_dir) echo "<button type='submit' class='clear'>Clear File</button>"; ?>
         </form>
