@@ -96,13 +96,12 @@ body {
 }
 
 .error {
-    height: 35px;
     width: 350px;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    padding-top: 15px; 
+    padding-bottom: 15px;
     background-color: #f35348;
     border-radius: 15px;
     color: white;
@@ -136,7 +135,7 @@ body {
     font-family: 'Verdana', sans-serif;
     letter-spacing: 1px;
     height: 40px;
-    width: 380px;
+    width: 420px;
     cursor: pointer;
     margin-bottom: 20px;
     box-shadow: 2px 5px 2px rgb(102, 102, 102);
