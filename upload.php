@@ -33,7 +33,7 @@ else{
 
 // Start uploading files based on the status
 if ($upload_status == 0) {
-	$_SESSION["message"]  =  "Something went wrong. Please try again. ! <br />";
+	$_SESSION["message"]  =  "Something went wrong. Please try again! <br />";
 } else {
 
 	// If everything is ok, then upload the file
