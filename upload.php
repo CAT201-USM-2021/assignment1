@@ -58,3 +58,4 @@ if (file_exists("pdfBox/src/uploads/converted.txt")) {
 
 // Stay at home page
 header("Location: index.php");
+?>

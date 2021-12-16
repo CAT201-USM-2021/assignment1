@@ -41,7 +41,7 @@ $file_dir = isset($_SESSION["file_dir"]) ? $_SESSION["file_dir"] : "";
             </form>
         </div>
 
-        <?php echo "<p><b> $convert_message </b></p> "; ?>
+        <?php if ($file_dir) echo "<p><b> $convert_message </b></p> "; ?>
         <br>
         <?php if ($file_dir) echo
         "<p> <a href='download.php?file=$file_dir'>
