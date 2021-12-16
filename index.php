@@ -34,23 +34,21 @@ $file_dir = isset($_SESSION["file_dir"]) ? $_SESSION["file_dir"] : "";
             <h3>Please upload your PDF file</h3>
             <form action="upload.php" method="post" , enctype="multipart/form-data">
                 <input type="file" id="myFile" class="file-upload" name="uploaded_file" , value="uploaded_file">
-                <?php echo "<div> <font color = 'blue'>$message </font> </div>"; ?> 
-                <!--- Can create a red text box for the error --->
-                <?php if ($error) echo "<div class='php'> <font color = 'red'> Error: $error </font> </div>"; ?>
+                <?php echo "<div><b> $message </b></div>"; ?> 
+                <?php if ($error) echo "<div class='error'>  Error: $error  </div>"; ?>
                 <br>
                 <button type="submit" class="submit">Submit</button>
             </form>
         </div>
-        <!--- Can improve the look of this button --->
-        <form action="clearfile.php" method="post">
-            <?php if ($file_dir) echo "<button type='submit' class='submit'>Clear File</button>"; ?>
-        </form>
-        <!--- Can create a download box for the converted file --->
-        <?php echo "<p>  <font color = 'green'>$convert_message</font> </p> "; ?>
+       
+        <?php echo "<p><b> $convert_message </b></p> "; ?>
+        <br>
         <?php if ($file_dir) echo 
             "<p> <a href='download.php?file=$file_dir'>
-                <button class ='submit'> Click here to download uploaded file </button> </a> </p>"; ?>
-
+                <button class ='download'> Download the Uploaded File </button> </a> </p>"; ?>
+        <form action="clearfile.php" method="post">
+            <?php if ($file_dir) echo "<button type='submit' class='clear'>Clear File</button>"; ?>
+        </form>
     </div>
 </body>
 
