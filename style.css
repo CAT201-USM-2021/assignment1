@@ -35,7 +35,7 @@ body {
 .main {
     background: url("images/wallpaper.jpg") no-repeat center center;
     background-size: cover;
-    height: 700px;
+    height: 720px;
     text-align: center;
 }
 
@@ -85,7 +85,7 @@ body {
     font-family: 'Verdana', sans-serif;
     letter-spacing: 1px;
     border-radius: 50px;
-    height: 60px;
+    height: 55px;
     color: white;
     width: 150px;
     cursor: pointer;
@@ -95,23 +95,73 @@ body {
     background-color: rgb(75, 161, 180);
 }
 
+.error {
+    height: 35px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: #f35348;
+    border-radius: 15px;
+    color: white;
+}
+
 .submit {
     border: none;
     background: rgb(92, 206, 214);
     border-radius: 50px;
+    color: white;
     font-size: 20px;
     font-family: 'Verdana', sans-serif;
     letter-spacing: 1px;
-    height: 80px;
-    color: white;
+    height: 75px;
     width: 180px;
     cursor: pointer;
+    margin-bottom: 60px;
     box-shadow: 2px 5px 2px rgb(102, 102, 102);
-    margin-bottom: 40px;
 }
 
 .submit:hover {
     background-color: rgb(75, 161, 180);
+}
+
+.download {
+    border: none;
+    background:rgb(243, 141, 166);
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 380px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 2px rgb(102, 102, 102);
+}
+
+.download:hover {
+    background-color: rgb(143, 78, 94);
+}
+
+.clear {
+    border: none;
+    background:rgb(243, 141, 166);
+    border-radius: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Verdana', sans-serif;
+    letter-spacing: 1px;
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+    box-shadow: 2px 5px 2px rgb(102, 102, 102);
+}
+
+.clear:hover {
+    background-color: rgb(143, 78, 94);
 }
 
 .php {
